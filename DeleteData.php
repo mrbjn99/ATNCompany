@@ -2,7 +2,7 @@
 <html>
 <body>
 
-<h1>INSERT DATA TO DATABASE</h1>
+<h1>DELETE TO DATABASE</h1>
 
 <?php
 ini_set('display_errors', 1);
@@ -28,7 +28,7 @@ if (empty(getenv("DATABASE_URL"))){
    ));
 }  
 
-$sql = "DELETE FROM customer WHERE customerid = 'c04'";
+$sql = "DELETE FROM customer WHERE customerid = 'c01'
 $stmt = $pdo->prepare($sql);
 if($stmt->execute() == TRUE){
     echo "Record deleted successfully.";
