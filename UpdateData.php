@@ -2,7 +2,7 @@
 <html>
 <body>
 
-<h1>INSERT DATA TO DATABASE</h1>
+<h1>UPDATE DATA TO DATABASE</h1>
 
 <?php
 ini_set('display_errors', 1);
@@ -41,7 +41,7 @@ if (empty(getenv("DATABASE_URL"))){
 
         // return the number of row affected
         //return $stmt->rowCount();
-$sql = "UPDATE customer SET customername = van quy' WHERE customerid = 'c02'";
+$sql = "UPDATE customer SET customername = 'van quy' WHERE customerid = 'c02'";
       $stmt = $pdo->prepare($sql);
 if($stmt->execute() == TRUE){
     echo "Record updated successfully.";
