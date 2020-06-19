@@ -2,7 +2,7 @@
 <html>
 <body>
 
-<h1>DELETE TO DATABASE</h1>
+<h1>DELETE TO DATABASE ATN</h1>
 
 <?php
 ini_set('display_errors', 1);
