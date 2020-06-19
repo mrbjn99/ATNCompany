@@ -6,7 +6,7 @@
 
 <?php
 ini_set('display_errors', 1);
-echo "Insert database!";
+echo "Delete database!";
 ?>
 
 <?php
@@ -28,7 +28,7 @@ if (empty(getenv("DATABASE_URL"))){
    ));
 }  
 
-$sql = "DELETE FROM customer WHERE customerid = 'c01'";
+$sql = "DELETE FROM customer WHERE customerid = 'c03'";
 $stmt = $pdo->prepare($sql);
 if($stmt->execute() == TRUE){
     echo "Record deleted successfully.";
